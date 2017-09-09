@@ -1,0 +1,34 @@
+﻿<Window x:Class="ProvaApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProvaApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="600">
+    <Window.Resources>
+        <Style TargetType="Grid">
+            <Setter Property="Margin" Value="3"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="3"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <DockPanel LastChildFill="True" Grid.Column="0">
+            <Button Name="Scansiona" DockPanel.Dock="Top" Click="Scansiona_Click">Scansiona</Button>
+            <TextBlock Name="tipo" DockPanel.Dock="Top"></TextBlock>
+            <TextBlock Name="testo" DockPanel.Dock="Top"></TextBlock>
+            <Image Name="imgPrew" DockPanel.Dock="Bottom"></Image>
+        </DockPanel>
+        <DockPanel LastChildFill="True" Grid.Column="1">
+            <Button Name="Scatta" DockPanel.Dock="Top" Click="Scatta_Click">Scatta</Button>
+
+            <Image Name="imgPrew2" DockPanel.Dock="Bottom"></Image>
+        </DockPanel>
+    </Grid>
+</Window>
