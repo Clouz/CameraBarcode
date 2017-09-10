@@ -6,6 +6,7 @@
         xmlns:public="clr-namespace:Camera_NET.Public;assembly=Camera_NET"
         xmlns:local="clr-namespace:CameraBcLib"
         mc:Ignorable="d"
+        Loaded="Window_Loaded"
         Closed="Window_Closed"
         Title="CameraBC" Height="600" Width="600">
     <Window.Resources>

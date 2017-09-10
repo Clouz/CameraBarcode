@@ -93,8 +93,17 @@ namespace CameraBcLib
 
             if (this.LoadingMode == Mode.Photo)
             {
-                CameraStop.IsEnabled = false;
+                CameraStop.Visibility = Visibility.Collapsed;
                 CameraScatta.Content = "Scatta";
+            }
+        }
+
+        private void Window_Loaded(object sender, EventArgs e)
+        {
+            if (_CameraChoice.Devices.Count == 0)
+            {
+                MessageBox.Show("No Camera Detected", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                this.Close();
             }
         }
 
@@ -209,6 +218,15 @@ namespace CameraBcLib
             selectedResolution = resData.ResList[resData.ResList.Count - 1];
         }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Window_Loaded_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 
     public enum Mode
