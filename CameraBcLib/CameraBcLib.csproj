@@ -32,10 +32,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Camera_NET">
-      <HintPath>..\packages\Camera_Net\lib\Camera_NET.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Camera_Net-master\Camera_Net\bin\Debug\Camera_NET.dll</HintPath>
     </Reference>
-    <Reference Include="DirectShowLib-2010">
-      <HintPath>..\packages\Camera_Net\lib\DirectShowLib-2010.dll</HintPath>
+    <Reference Include="DirectShowLib, Version=2.1.0.1599, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DirectShowLib.1.0.0\lib\DirectShowLib.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

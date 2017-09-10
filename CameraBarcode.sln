@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.12
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraBcLib", "CameraBcLib\CameraBcLib.csproj", "{59AF480E-3332-409B-9246-8AE9E1968863}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaApp", "ProvaApp\ProvaApp.csproj", "{E2865F6F-2C2F-43EE-850A-74BE5B015572}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camera_NET", "Camera_Net\Camera_NET.csproj", "{E6052609-A070-41D5-85B9-ACABA91170C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{E2865F6F-2C2F-43EE-850A-74BE5B015572}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2865F6F-2C2F-43EE-850A-74BE5B015572}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2865F6F-2C2F-43EE-850A-74BE5B015572}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6052609-A070-41D5-85B9-ACABA91170C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6052609-A070-41D5-85B9-ACABA91170C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6052609-A070-41D5-85B9-ACABA91170C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6052609-A070-41D5-85B9-ACABA91170C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
