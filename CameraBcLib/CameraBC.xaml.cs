@@ -98,15 +98,6 @@ namespace CameraBcLib
             }
         }
 
-        private void Window_Loaded(object sender, EventArgs e)
-        {
-            if (_CameraChoice.Devices.Count == 0)
-            {
-                MessageBox.Show("No Camera Detected", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                this.Close();
-            }
-        }
-
         private void Window_Closed(object sender, EventArgs e)
         {
             cameraControl.CameraControl.CloseCamera();
@@ -220,12 +211,11 @@ namespace CameraBcLib
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void Window_Loaded_1(object sender, RoutedEventArgs e)
-        {
-
+            if (_CameraChoice.Devices.Count == 0)
+            {
+                MessageBox.Show("No Camera Detected", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                this.Close();
+            }
         }
     }
 
